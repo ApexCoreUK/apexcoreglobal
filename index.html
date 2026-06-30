@@ -1,58 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ApexCore Global Ltd</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0a0a0a;
-      color: white;
-      text-align: center;
-    }
-    header {
-      background: #0d47a1;
-      padding: 20px;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    .btn {
-      background: #0d47a1;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      margin-top: 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    footer {
-      background: #111;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ApexCore Global Ltd</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b0f1a;
+  color:white;
+}
+
+/* Header */
+header{
+  background:#0d47a1;
+  padding:20px;
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+/* Hero */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+}
+.hero h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+.hero p{
+  font-size:18px;
+  color:#ccc;
+}
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#0d47a1;
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+  font-size:16px;
+}
+
+/* Section */
+section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+h2{
+  color:#4aa3ff;
+  margin-bottom:20px;
+}
+
+/* Services */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding-top:20px;
+}
+
+.card{
+  background:#111a2e;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #1f2a44;
+}
+
+.card:hover{
+  background:#16213a;
+}
+
+/* Footer */
+footer{
+  background:#05070d;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+  color:#aaa;
+  margin-top:30px;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
-  ApexCore Global Ltd
+ApexCore Global Ltd
 </header>
 
-<section>
-  <h1>Welcome to ApexCore Global Ltd</h1>
-  <p>Professional Business Solutions | UK Based Company</p>
+<div class="hero">
+  <h1>Global Trading Solutions</h1>
+  <p>Import • Export • Clothing • Surgical Instruments • Sports & Equestrian Wear</p>
   <button class="btn">Contact Us</button>
+</div>
+
+<section>
+  <h2>Our Services</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <h3>Import & Export</h3>
+      <p>Worldwide trade and supply chain solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Clothing</h3>
+      <p>High-quality fashion and apparel manufacturing.</p>
+    </div>
+
+    <div class="card">
+      <h3>Surgical Instruments</h3>
+      <p>Medical-grade precision instruments supply.</p>
+    </div>
+
+    <div class="card">
+      <h3>Sports Wear</h3>
+      <p>Gym & performance sportswear production.</p>
+    </div>
+
+    <div class="card">
+      <h3>Horse Riding Wear</h3>
+      <p>Professional equestrian clothing & gear.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p style="max-width:700px;margin:auto;color:#ccc;">
+    ApexCore Global Ltd is a UK-based trading company dealing in international import and export,
+    clothing manufacturing, surgical instruments, sportswear, and equestrian wear. We focus on quality,
+    reliability, and global business connections.
+  </p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: info@apexcoreglobal.com</p>
+  <p>Phone: +44 (UK)</p>
 </section>
 
 <footer>
-  © 2026 ApexCore Global Ltd
+© 2026 ApexCore Global Ltd. All Rights Reserved.
 </footer>
 
 </body>
